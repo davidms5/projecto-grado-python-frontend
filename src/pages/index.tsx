@@ -84,14 +84,14 @@ export default function Home() {
 
         <button type='submit'>enviar</button>
       </form>
-        {download && <button onClick={handleDownload}>descargar ticket</button>}
+        {/*download && <button onClick={handleDownload}>descargar ticket</button>*/}
 
       
       <p>nombre: {ticket.nombre}</p>
       <p>apellido: {ticket.apellido}</p>
       <p>total a pagar: {ticket.precio}</p>
       <p>codigo del ticket: {id}</p>
-        {/*mensaje && <h2>muchas gracias por viajar con nosotros</h2>*/}
+        {mensaje && <h2>muchas gracias por viajar con nosotros</h2>}
 
       <a href="https://projecto-grado-python-production.up.railway.app/admin" style={{fontSize:"12px"}}>login</a>
       
