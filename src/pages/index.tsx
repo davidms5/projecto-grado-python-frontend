@@ -91,7 +91,7 @@ export default function Home() {
         <button type='submit' className='bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700'>enviar</button>
       </form>
       </div>
-        {download && <button onClick={handleDownload}>descargar ticket</button>}
+        {/*download && <button onClick={handleDownload}>descargar ticket</button>*/}
 
       
       <p>nombre: {ticket.nombre}</p>
@@ -100,7 +100,7 @@ export default function Home() {
       <p>codigo del ticket: {id}</p>
         {mensaje && <h2>muchas gracias por viajar con nosotros</h2>}
 
-      <a href="http://127.0.0.1:8000/admin" style={{fontSize:"24px"}}>login</a>
+      <a href="https://projecto-grado-python-production.up.railway.app/admin" style={{fontSize:"12px"}}>login</a>
       
     
       
