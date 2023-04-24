@@ -93,7 +93,7 @@ export default function Home() {
       <p>codigo del ticket: {id}</p>
         {mensaje && <h2>muchas gracias por viajar con nosotros</h2>}
 
-      <a href="http://127.0.0.1:8000/admin" style={{fontSize:"24px"}}>login</a>
+      <a href="https://projecto-grado-python-production.up.railway.app/admin" style={{fontSize:"12px"}}>login</a>
       
     
       
