@@ -63,27 +63,34 @@ export default function Home() {
     setTicket({...ticket, [name]: value})
  }
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      
-      <form onSubmit={handleSubmit}>
+    <main className="bg-gray-500  dark:bg-gray-500 text-black flex min-h-screen flex-col items-center justify-between p-24">
+      <div className='max-w-md mx-auto rounded-lg shadow-md overflow-hidden'>
+      <form onSubmit={handleSubmit} className='p-6 bg-orange-400 flex flex-col justify-center'>
 
+          <div className='mb-6'>
         <label>
           Nombre:
-          <input type="text" name='nombre' value={ticket.nombre} onChange={handleChange}/>
+          <input type="text" name='nombre' value={ticket.nombre} onChange={handleChange} className='ml-1'/>
         </label>
+        </div>
 
+        <div className='mb-6'>
         <label>
           Apellido:
-          <input type="text" name='apellido' value={ticket.apellido} onChange={handleChange}/>
+          <input type="text" name='apellido' value={ticket.apellido} onChange={handleChange} className='ml-1'/>
         </label>
+        </div>
 
+        <div className='mb-6'>
         <label>
-          precio:
-          <input type="number" name='precio'  onChange={handleChange}/>
+          precio: 
+          <input type="number" name='precio'  onChange={handleChange} className='ml-5'/>
         </label>
+        </div>
 
-        <button type='submit'>enviar</button>
+        <button type='submit' className='bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700'>enviar</button>
       </form>
+      </div>
         {download && <button onClick={handleDownload}>descargar ticket</button>}
 
       
