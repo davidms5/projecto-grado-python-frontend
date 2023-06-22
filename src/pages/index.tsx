@@ -93,12 +93,14 @@ export default function Home() {
       </div>
         {/*download && <button onClick={handleDownload}>descargar ticket</button>*/}
 
-      
+      <br/>
+     <div className="p-6 bg-orange-400 flex flex-col justify-center"> 
       <p>nombre: {ticket.nombre}</p>
       <p>apellido: {ticket.apellido}</p>
       <p>total a pagar: {ticket.precio}</p>
       <p>codigo del ticket: {id}</p>
         {mensaje && <h2>muchas gracias por viajar con nosotros</h2>}
+      </div>
 
       
         <a href={"http://127.0.0.1:8000/admin"||"https://projecto-grado-python-production.up.railway.app/admin" } ><button style={{
