@@ -100,7 +100,14 @@ export default function Home() {
       <p>codigo del ticket: {id}</p>
         {mensaje && <h2>muchas gracias por viajar con nosotros</h2>}
 
-      <a href="https://projecto-grado-python-production.up.railway.app/admin" style={{fontSize:"12px"}}>login</a>
+      
+        <a href={"http://127.0.0.1:8000/admin"||"https://projecto-grado-python-production.up.railway.app/admin" } ><button style={{
+    backgroundColor: 'blue',
+    color: 'white',
+    padding: '0.5rem 1rem',
+    borderRadius: '0.25rem',
+  }}>login</button></a>
+        
       
     
       
