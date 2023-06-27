@@ -103,7 +103,7 @@ export default function Home() {
       </div>
 
       
-        <a href={"http://127.0.0.1:8000/admin"||"https://projecto-grado-python-production.up.railway.app/admin" } ><button style={{
+        <a href={"https://projecto-grado-python-production.up.railway.app/admin" } ><button style={{
     backgroundColor: 'blue',
     color: 'white',
     padding: '0.5rem 1rem',
